@@ -63,14 +63,95 @@ if "logado" not in st.session_state:
 if st.session_state.logado:
     st.success(f"Bem-vindo(a), {st.session_state.nome_usuario}!")
     st.header("Explicação do Projeto")
+
     st.write("Boa tarde! Meu nome é Guilherme sou dupla do Pedro e a gente fez um jogo com base no que “ensinam” na área de instrumentação que seria a automação de maquinas e seus objetivos, nosso jogo mostra como uma maquina é automatizada para que saiba diferenciar caixas danificadas e caixas em boas condições, e para deixar mais interativo fizemos como se você fosse a garra, a gente poderia ter feito facilmente uma “animação” da garra escolhendo a caixa boa e colocando na esteira e a caixa ruim no lixo mas para ter mais imersão decidimos fazer assim. ")
-<<<<<<< HEAD
+
     st.write("Lembrando que o jogo é apenas para computador")
-=======
->>>>>>> 05cf3c0 (Atualizando com novas imagens e botão)
+    
     st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
     if st.button("Sair"):
         st.session_state.logado = False
+
+    st.write("Boa tarde! Meu nome é Guilherme sou dupla do Pedro e a gente fez um jogo com base no que “ensinam” na área de instrumentação que seria a automação de máquinas e seu controle.")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
+
+    with col2:
+        if st.button("Codigos."):
+            st.session_state.pagina = "outra_pagina"
+            col1, col2, col3 = st.columns(3)
+
+
+        with col1:
+            st.image("")
+
+        with col2:
+            st.image("")
+
+        with col3:
+            st.image("")
+
+
+            if st.button("Mostrar mais"):
+                col4, col5, col6 = st.columns(3)
+
+        with col4:
+            st.image("")
+
+        with col5:
+            st.image("")
+
+        with col6:
+            st.image("")
+
+
+            if st.button("Mostrar mais"):
+                col7, col8, col9 = st.columns(3)
+
+        with col7:
+            st.image("")
+
+        with col6:
+            st.image("")
+
+        with col9:
+            st.image("")
+
+
+            if st.button("Mostrar mais"):
+                col10, col11, col12 = st.columns(3)
+
+
+        with col10:
+            st.image("")
+
+        with col11:
+            st.image("")
+
+        with col12:
+            st.image("")
+
+
+            if st.button("Mostrar mais"):
+                col13, col14, col15 = st.columns(3)
+
+
+        with col13:
+            st.image("")
+
+        with col14:
+            st.image("")
+
+        with col15:
+            st.image("")
+
+
+            if st.button("Sair"):
+                st.session_state.logado = False
+
         st.rerun()
 
 
