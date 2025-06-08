@@ -64,13 +64,15 @@ if st.session_state.logado:
     st.success(f"Bem-vindo(a), {st.session_state.nome_usuario}!")
     st.header("Explicação do Projeto")
     st.write("Boa tarde! Meu nome é Guilherme sou dupla do Pedro e a gente fez um jogo com base no que “ensinam” na área de instrumentação que seria a automação de maquinas e seus objetivos, nosso jogo mostra como uma maquina é automatizada para que saiba diferenciar caixas danificadas e caixas em boas condições, e para deixar mais interativo fizemos como se você fosse a garra, a gente poderia ter feito facilmente uma “animação” da garra escolhendo a caixa boa e colocando na esteira e a caixa ruim no lixo mas para ter mais imersão decidimos fazer assim. ")
-
+<<<<<<< HEAD
     st.write("Lembrando que o jogo é apenas para computador")
-    
+=======
+>>>>>>> 05cf3c0 (Atualizando com novas imagens e botão)
     st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
     if st.button("Sair"):
         st.session_state.logado = False
         st.rerun()
+
 
 # ============ Registro ============
 
