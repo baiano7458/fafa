@@ -1,4 +1,4 @@
 
 
 streamlit
-sqlite3-to-json
+sqlite3-tostring        
