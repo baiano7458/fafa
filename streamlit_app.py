@@ -86,7 +86,7 @@ if st.session_state.logado:
 
 
         with col1:
-            st.image("image.png")
+            st.image("")
 
         with col2:
             st.image("")
