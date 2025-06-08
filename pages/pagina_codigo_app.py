@@ -1,5 +1,10 @@
 import streamlit as st
 
+if "logado" not in st.session_state or not st.session_state.logado:
+    st.error("Você precisa estar logado para acessar esta página.")
+    st.stop()
+
+
 st.set_page_config(layout="wide")
 st.title("Página de Códigos")
 
