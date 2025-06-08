@@ -74,14 +74,11 @@ if st.session_state.logado:
 
     st.write("Boa tarde! Meu nome é Guilherme sou dupla do Pedro e a gente fez um jogo com base no que “ensinam” na área de instrumentação que seria a automação de máquinas e seu controle.")
 
-    col1 = st.columns(1)
-
-    with col1:
-        st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
+    st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
 
 
-        if st.button("Sair"):
-            st.session_state.logado = False
+    if st.button("Sair"):
+        st.session_state.logado = False
 
         st.rerun()
 
