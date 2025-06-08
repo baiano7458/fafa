@@ -74,83 +74,14 @@ if st.session_state.logado:
 
     st.write("Boa tarde! Meu nome é Guilherme sou dupla do Pedro e a gente fez um jogo com base no que “ensinam” na área de instrumentação que seria a automação de máquinas e seu controle.")
 
-    col1, col2 = st.columns(2)
+    col1 = st.columns(1)
 
     with col1:
         st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
 
-    with col2:
-        if st.button("Codigos."):
-            st.session_state.pagina = "outra_pagina"
-            col1, col2, col3 = st.columns(3)
 
-
-        with col1:
-            st.image("image.png")
-
-        with col2:
-            st.image("image2.png")
-
-        with col3:
-            st.image("image3.png")
-
-
-            if st.button("Mostrar mais"):
-                col4, col5, col6 = st.columns(3)
-
-        with col4:
-            st.image("image4.png")
-
-        with col5:
-            st.image("image5.png")
-
-        with col6:
-            st.image("image6.png")
-
-
-            if st.button("Mostrar mais"):
-                col7, col8, col9 = st.columns(3)
-
-        with col7:
-            st.image("image7.png")
-
-        with col6:
-            st.image("image8.png")
-
-        with col9:
-            st.image("image9.png")
-
-
-            if st.button("Mostrar mais"):
-                col10, col11, col12 = st.columns(3)
-
-
-        with col10:
-            st.image("image10.png")
-
-        with col11:
-            st.image("image11.png")
-
-        with col12:
-            st.image("image12.png")
-
-
-            if st.button("Mostrar mais"):
-                col13, col14, col15 = st.columns(3)
-
-
-        with col13:
-            st.image("image13.png")
-
-        with col14:
-            st.image("image14.png")
-
-        with col15:
-            st.image("image15.png")
-
-
-            if st.button("Sair"):
-                st.session_state.logado = False
+        if st.button("Sair"):
+            st.session_state.logado = False
 
         st.rerun()
 
