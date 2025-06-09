@@ -68,7 +68,7 @@ if st.session_state.logado:
 
     st.write("Lembrando que o jogo é apenas para computador")
     
-    st.link_button("⬇️ Baixar Jogo do Robô", "https://github.com/baiano7458/fafa/raw/refs/heads/main/Jogo%20do%20robo2.zip")
+    st.link_button("⬇️ Baixar Jogo do Robô", "https://raw.githubusercontent.com/baiano7458/fafa/refs/heads/main/jogo_final.zip")
     if st.button("Sair"):
         st.session_state.logado = False
 
