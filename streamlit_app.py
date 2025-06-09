@@ -78,7 +78,7 @@ if st.session_state.logado:
 # ============ Registro ============
 
 else:
-    st.title("Bem-vindo ao App!")
+    st.title("Bem-vindo ao site")
 
     aba = st.radio("Escolha uma opção", ["Login", "Registrar"])
 
