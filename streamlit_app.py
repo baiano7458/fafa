@@ -4,12 +4,8 @@ import requests
 import hashlib
 import streamlit.components.v1 as components
 
-def registrar_acesso(nome_usuario):
-    payload = {"usuario": nome_usuario}
-    try:
-        requests.post("http://192.168.15.9:5000/registrar_acesso", json=payload)
-    except:
-        pass
+
+
 
 
 def conectar():
@@ -122,8 +118,17 @@ else:
             if usuario:
                 st.session_state.logado = True
                 st.session_state.nome_usuario = usuario[1]
-                registrar_acesso(usuario[1])  # 👈 registra o acesso na VM
-                st.rerun()
 
+
+                # Enviar IP para servidor Flask no Kali Linux
+                try:
+                    requests.post("http://192.168.15.9:5000/registrar_acesso", json={
+                        "usuario": usuario[1],
+                        "ip": requests.get("https://api.ipify.org").text
+                    })
+                except:
+                    st.warning("Não foi possível registrar o IP no servidor.")
+
+                st.rerun()
             else:
                 st.error("Email ou senha incorretos.")
